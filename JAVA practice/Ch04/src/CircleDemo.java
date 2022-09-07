@@ -1,12 +1,20 @@
 class Circle{
-    double radius;
+    private double radius;
+
+    public double getRadius() {
+        return radius;
+    }
+
+    public void setRadius(double r){
+        this.radius = r;
+    }
 
     double findArea(){
-        return 3.14 * radius * this.radius;
+        return 3.14 * radius * radius;
     }
 
     void show(double x, double y){
-        System.out.printf("반지름 = %.1f, 넓이 = %.1f",x,y);
+        System.out.printf("반지름 = %.1f, 넓이 = %.1f\n",x,y);
     }
 }
 
@@ -14,8 +22,9 @@ class Circle{
 public class CircleDemo {
     public static void main(String[] args) {
         Circle myCircle = new Circle();
-        myCircle.radius = 10.0;
 
-        myCircle.show(myCircle.radius,myCircle.findArea());
+        myCircle.setRadius(10.0);
+
+        myCircle.show(myCircle.getRadius(), myCircle.findArea());
     }
 }
