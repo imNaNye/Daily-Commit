@@ -34,6 +34,7 @@ class Printer{
     }
 
     public void print(int amount){
+
         if (this.numOfPapers <= 0)
             System.out.println("용지가 부족합니다");
         else if (amount >= this.numOfPapers){
@@ -44,6 +45,7 @@ class Printer{
             this.numOfPapers -= amount;
 
         System.out.println("용지가 "+this.numOfPapers+"장 남았습니다.");
+
     }
 
 }

@@ -9,6 +9,13 @@
 using namespace std;
 
 int main() {
-    cout << "Hello, World!" << endl;
-    return 0;
+    int radius;
+    double area;
+    
+    const double PI = 3.14159;
+    radius = 20;
+    
+    area = radius * radius * PI;
+    
+    cout << "원의 면적은 : " << area << endl;
 }
