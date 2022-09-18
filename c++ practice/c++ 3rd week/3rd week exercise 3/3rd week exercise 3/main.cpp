@@ -14,7 +14,7 @@ int main() {
     int year;
     cin >> year;
     
-    bool isLeapYear = ((year % 4 == 0 && year % 100 != 0)||(year % 400 == 0));
+    bool isLeapYear = ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0));
     
     if (isLeapYear){
         cout << year << "년은 윤년입니다. "<< endl;
