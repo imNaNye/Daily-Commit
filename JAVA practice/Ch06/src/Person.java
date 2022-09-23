@@ -1,16 +1,25 @@
 public class Person {
-    void name(){}
-    protected void number() {}
-    void weight() {}
-    static void show(){}
-    private void secret(){}
-}
+    protected String name;
+    protected int age;
+    public String getName(){
+        return this.name;
+    }
+    public void setName(String name){
+        this.name = name;
+    }
+    public int getAge(){
+        return this.age;
+    }
+    public void setAge(int age){
+        this.age = age;
+    }
 
-class Student extends Person{
-    public void name(){}
-    @Override
-    void number(){}
-    static void weight(){}
-    static void show(){}
-    private void secret(){}
+    public Person(){
+        age = 0;
+        name = "장현경";
+    }
+
+    public void show(){
+        System.out.println("사람[이름 : "+name+", 나이 : "+age+"]");
+    }
 }

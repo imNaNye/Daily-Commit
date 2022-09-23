@@ -1,13 +1,9 @@
 public class Circle {
-    private void secret(){
-        System.out.println("히힛 나만볼꾸얌");
+    int radius;
+    public void show(){
+        System.out.println("반지름이 "+ this.radius +" 인 원이다.");
     }
-
-    protected void findRadius(){
-        System.out.println("반지름이 10.0센티미터이다.");
-    }
-
-    public void findArea(){
-        System.out.println("넓이는 (파이 * 반지름 * 반지름)이다. ");
+    public Circle (int radius){
+        this.radius = radius;
     }
 }
