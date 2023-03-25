@@ -1,5 +1,5 @@
 #include "CharArrayStack.h"
-#include <iostream>;
+#include <iostream>
 
 using namespace std;
 
@@ -24,7 +24,12 @@ using namespace std;
     bool CharArrayStack::isFull(){
        return (top == MAX_ARRAY_SIZE);
    }
-    void CharArrayStack::display(){}
+    void CharArrayStack::display(){
+       for (int i = 0; i <= top ; i++) {
+           cout << data[i] << "    ";
+       }
+       cout << endl;
+   }
 
 bool checkMatching(string s){
     CharArrayStack st;
@@ -32,15 +37,34 @@ bool checkMatching(string s){
     for (int i = 0; i < strLength; i++){
         if ((s.at(i) == '(') || (s[i] == '{') || (s[i] == '['))
             st.push(s[i]);
-        else if (~((s[i] == ')') || (s[i] == '}') || (s[i] == ']')) && ((s[i] == st.pop())||(st.isEmpty()))){
-            cout << s[i] << "an error occured." << endl;
-            return false;
+        else if (s.at(i) == ')'){
+            if ((st.isEmpty()) || (st.pop() != '(')){
+                cout << "error occurred : " << s.at(i) << endl;
+                return false;
+            }
+        }
+        else if (s.at(i) == '}'){
+            if ((st.isEmpty()) || (st.pop() != '{')){
+                cout << "error occurred : " << s.at(i) << endl;
+                return false;
+            }
+        }
+        else if (s.at(i) == ']'){
+            if ((st.isEmpty()) || (st.pop() != '[')){
+                cout << "error occurred : " << s.at(i) << endl;
+                return false;
+            }
         }
     }
-    if (~(st.isEmpty()))
+    st.display();
+    if (~(st.isEmpty())){
+        cout << "stack isn't empty" << endl;
         return false;
-    else
+    }
+    else{
+        cout << "no error" << endl;
         return true;
+    }
 }
 
 int main(){
