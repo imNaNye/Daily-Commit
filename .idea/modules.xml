@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/JAVA practice/2023 CH02/2023 CH02.iml" filepath="$PROJECT_DIR$/JAVA practice/2023 CH02/2023 CH02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BaekJun/BaekJun.iml" filepath="$PROJECT_DIR$/BaekJun/BaekJun.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JAVA practice/Ch02/Ch02.iml" filepath="$PROJECT_DIR$/JAVA practice/Ch02/Ch02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JAVA practice/Ch03/Ch03.iml" filepath="$PROJECT_DIR$/JAVA practice/Ch03/Ch03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JAVA practice/Ch04/Ch04.iml" filepath="$PROJECT_DIR$/JAVA practice/Ch04/Ch04.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JAVA practice/Ch05/Ch05.iml" filepath="$PROJECT_DIR$/JAVA practice/Ch05/Ch05.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JAVA practice/Ch06/Ch06.iml" filepath="$PROJECT_DIR$/JAVA practice/Ch06/Ch06.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JAVA practice/Ch07/Ch07.iml" filepath="$PROJECT_DIR$/JAVA practice/Ch07/Ch07.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Daily-Commit.iml" filepath="$PROJECT_DIR$/.idea/Daily-Commit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JAVA practice/HelloWorld/HelloWorld.iml" filepath="$PROJECT_DIR$/JAVA practice/HelloWorld/HelloWorld.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JAVA practice/chap03/chap03.iml" filepath="$PROJECT_DIR$/JAVA practice/chap03/chap03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JAVA practice/chap04/chap04.iml" filepath="$PROJECT_DIR$/JAVA practice/chap04/chap04.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JAVA practice/chap2_basics/chap2_basics.iml" filepath="$PROJECT_DIR$/JAVA practice/chap2_basics/chap2_basics.iml" />
+    </modules>
+  </component>
+</project>
