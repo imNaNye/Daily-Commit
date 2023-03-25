@@ -57,7 +57,7 @@ bool checkMatching(string s){
         }
     }
     st.display();
-    if (~(st.isEmpty())){
+    if (!(st.isEmpty())){
         cout << "stack isn't empty" << endl;
         return false;
     }
