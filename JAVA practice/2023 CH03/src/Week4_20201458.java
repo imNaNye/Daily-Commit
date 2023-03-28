@@ -9,10 +9,10 @@ public class Week4_20201458 {
     }
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        String source, target;
+        String source;
         double cel, fah;
         System.out.println("Hello!");
-        do{
+        while(true){
             System.out.print("Please choose a source unit (C,F) or type 'exit' to quit : ");
             source = in.nextLine();
             if (source.equalsIgnoreCase("exit"))
@@ -21,15 +21,15 @@ public class Week4_20201458 {
                 System.out.print("Enter the temperature in Fahrenheit: ");
                 fah = in.nextDouble();
                 cel = fahrenheitToCelsius(fah);
-                System.out.println(fah + " Fahrenheit is " + cel + " Celsius.");
+                System.out.println(fah + " Fahrenheit is " + cel + " Celsius.\n");
             }
             else if (source.equalsIgnoreCase("C")){
                 System.out.print("Enter the temperature in Celsius: ");
                 cel = in.nextDouble();
                 fah = celsiusToFahrenheit(cel);
-                System.out.println(cel + " Celsius is " + fah + " Fahrenheit.");
+                System.out.println(cel + " Celsius is " + fah + " Fahrenheit.\n");
             }
-        }while(true);
+        }
         System.out.println("Good bye!");
     }
 }
