@@ -14,7 +14,7 @@ public class Week4_20201458 {
         System.out.println("Hello!");
         while(true){
             System.out.print("Please choose a source unit (C,F) or type 'exit' to quit : ");
-            source = in.nextLine();
+            source = in.next();
             if (source.equalsIgnoreCase("exit"))
                 break;
             else if (source.equalsIgnoreCase("F")){
