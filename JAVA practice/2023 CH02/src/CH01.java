@@ -2,13 +2,9 @@ import java.util.Scanner;
 
 public class CH01 {
     public static void main(String[] args) {
-        double w, h, area;
-        Scanner in = new Scanner(System.in);
-        System.out.println("직사각혈릐 가로 길이를 입력하세요 : ");
-        w = in.nextDouble();
-        System.out.println("직사각형의 세로 길이를 입력하세요 : ");
-        h = in.nextDouble();
-        area = w * h;
-        System.out.println("직사각형의 넓이는 " + area + "입니다.");
+      int x = 100  ;
+        System.out.println(x + "부터 " + 200);
+        System.out.println(x+100+"년전");
+        System.out.println("200"+"100"+"어이쿠!");
     }
 }

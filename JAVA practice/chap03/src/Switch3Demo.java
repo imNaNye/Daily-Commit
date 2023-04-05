@@ -14,7 +14,7 @@ public class Switch3Demo {
             default -> {
                 System.out.println("!!!");
                 yield "oops";
-            }; //반환값이 모두 동일하게 주어져야 함. 반환 void의 경우에도 yield 사용
+            } //반환값이 모두 동일하게 주어져야 함. 반환 void의 경우에도 yield 사용
         };
 
         System.out.println(s);
