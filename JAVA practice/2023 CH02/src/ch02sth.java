@@ -7,6 +7,7 @@ public class ch02sth {
         double d1 = 2.8;
         boolean b1 = true;
 
+
         System.out.printf("il = %d\n", i1);
         System.out.printf("i1/2 = %d\n", i1/2);
         System.out.println("c1 + ONE = " + c1+ONE);
