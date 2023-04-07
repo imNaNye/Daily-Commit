@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>회원가입</h1>
+    <form>
+        <hr>
+        <label>아이디 <input type = "text" name = "id"> </label>
+        <input type = "button" value = "중복확인"><br>
+        <label>비밀번호 <input type = "password" name="password"> </label> <br>
+        <label>이름 <input type = "text" name = "name"> </label><br>
+        성별
+        <label><input type = "radio" name = "gender" value="w"> 여자</label>
+        <label><input type = "radio" name = "gender" value = "m"> 남자 </label><br>
+        생년월일
+        <input type = "date" name = "birthday"><br>
+        주소
+        <input type = "text" name = "address"> - <input type = "text" name = "address2"><input type = "button" value = "우편번호"><br>
+        <input type = "text" name = "address3"><br>
+        휴대전화
+        <select>
+            <option>010</option>
+            <option>011</option>
+            <option>017</option>
+            <option>018</option>
+            <option>019</option>
+        </select>
+        - <input type = "text" name = "phonenum"> - <input type = "text" name = "phonenum2"><br>
+        이메일
+        <input type = "text" name = "email">
+        <select>
+            <option>@naver.com</option>
+            <option>@daum.net</option>
+            <option>@sungshin.ac.kr</option>
+        </select><br>
+        직업
+        <input type = "text" list = "jobs"> <br>
+        <datalist id = "jobs">
+            <option>대학생</option>
+            <option>회사원</option>
+            <option>자영업</option>
+        </datalist>
+        취미
+        <label><input type = "checkbox" name = "hobby" value = "reading"> 독서</label>
+        <label><input type = "checkbox" name = "hobby" value = "movie"> 영화</label>
+        <label><input type = "checkbox" name = "hobby" value = "music"> 음악</label>
+        <label><input type = "checkbox" name = "hobby" value = "sports"> 스포츠</label><br>
+        <label>자기소개 <textarea name = "introduce" rows = "5" cols = "30"></textarea></label>
+        <hr>
+        <label><input type = "checkbox" name = "email" value = "y"checked> 사이트의 이메일을 수신합니다.</label><br>
+        <label><input type = "checkbox" name = "sms" value = "y" checked> 사이트의 sms를 수신합니다. </label><br><br>
+        <input type = "submit" value="회원가입"> <input type = "reset">
+    </form>
+</body>
+</html>
