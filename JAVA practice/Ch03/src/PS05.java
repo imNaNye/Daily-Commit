@@ -3,7 +3,9 @@ public class PS05 {
         for( int a = 1 ; a < 21 ; a++){
             for (int b = 1; b < 21  ; b++){
                 for (int c = 1; c < 21 ; c++){
-                    if ((a*a + b*b == c*c)&&(a<=b)&&(b<=c))
+                   if (a+b+c>20)
+                       continue;
+                   if ((a*a + b*b == c*c)&&(a<=b)&&(b<=c))
                         System.out.println(a+" "+b+" "+ c);
                 }
             }
