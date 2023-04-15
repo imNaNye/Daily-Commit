@@ -12,50 +12,121 @@ class Node {
 	int		data; // data field of 'this' node
 
 public:
-	Node() { }
-	Node* getLink() { }
-	void setLink(Node* next) { }
-	void display() { }
-    int getData() { }
+	Node(int data = 0) {
+        this -> link = NULL;
+        this -> data = data;
+    }
+	Node* getLink() {
+        return link;
+    }
+	void setLink(Node* next) {
+        this->link = next;
+    }
+	void display() {
+        cout << this->data;
+    }
+    int getData() {
+        return this->data;
+    }
 
     // insert new node (n) next to current node
-	void insertNext(Node *n) { }
+	void insertNext(Node *n) {
+        if (n!=NULL){
+            n->link = link;
+            link = n;
+        }
+    }
 
     // remove next node from current node
-	Node* removeNext() { }
+	Node* removeNext() {
+        Node* removed = link;
+        if (removed != NULL)
+            link = removed->link;
+        return removed;
+    }
 };
 
 class LinkedList {
 	Node	org;	// head node (not head pointer!)
 
 public:
-	LinkedList() { }
-	~LinkedList() { }
+	LinkedList(): org(0) {}
+	~LinkedList() {
+        clear();
+    }
 
-	void clear() { }
-	Node* getHead() { }
-	bool isEmpty() { }
+	void clear() {
+        while(!isEmpty())
+            delete remove(0);
+    }
+	Node* getHead() {
+        return org.getLink();
+    }
+	bool isEmpty() {
+        return getHead() == NULL;
+    }
 
     // return node in position 'pos' from the list
-	Node* getEntry(int pos) { }
+	Node* getEntry(int pos) {
+        Node* n = &org;
+        for(int i = -1; i < pos; i++, n = n->getLink())
+            if (n == NULL) break;
+        return n;
+    }
 
     // insert new node (n) in position 'pos'
-	void insert(int pos, Node *n) { }
+	void insert(int pos, Node *n) {
+        Node* prev = getEntry(pos - 1);
+        if (prev != NULL)
+            prev ->insertNext(n);
+    }
 
     // remove a node in position 'pos'
-	Node* remove(int pos) { }
+	Node* remove(int pos) {
+        Node* prev = getEntry(pos - 1);
+        return prev -> removeNext();
+    }
 
     // return size of list
-	int size() { }
+	int size() {
+        int count = 0;
+        for (Node* p = getHead(); p!=NULL; p = p->getLink())
+            count++;
+        return count;
+    }
 
     // display data fields of nodes in the list
-	void display(const char* str = "List" ) { }
+	void display(const char* str = "List" ) {
+        cout << str << "[list size " << this->size() <<"] : ";
+        for (int i = 0; i < this->size(); i++) {
+            cout << "<";
+            this->getEntry(i)->display();
+            cout << "> ";
+        }
+        cout << endl;
+    }
 
     // reverse list
-	void reverse() { }
+	void reverse() {
+        Node* current = this->getHead();
+        Node* next = NULL;
+        Node* prev = NULL;
+        if(!this->isEmpty()){
+            while(current != NULL){
+                next = current->getLink();
+                current->setLink(prev);
+                prev = current;
+                current = next;
+            }
+            org.setLink(prev);
+        }
+    }
 
     // return new list that have data fields of two lists in descending order
-    LinkedList* mergeTwoLists(LinkedList* list2) { }
+    LinkedList* mergeTwoLists(LinkedList* list2) {
+        LinkedList* mergedList = new LinkedList();
+        
+    }
 };
 
 int main()
