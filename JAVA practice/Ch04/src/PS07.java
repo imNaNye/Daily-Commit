@@ -2,8 +2,7 @@ class GolfClub{
     private String clubName;
 
     GolfClub(int clubNumber){
-        String a = Integer.toString(clubNumber);
-        this.clubName = a + "번 아이언";
+        this.clubName = clubNumber + "번 아이언";
     }
     GolfClub(String clubName){
         this.clubName = clubName;

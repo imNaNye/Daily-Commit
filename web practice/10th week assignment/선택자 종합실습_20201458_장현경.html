@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10주차 실습</title>
+    <style>
+        a{color:orange}
+        a:hover{color:red}
+        a:visited{color:green}
+        a:active{color:blue}
+        input[type = text]:focus,input[type=password]:focus{background-color: yellow; color:red}
+        input[type = radio] + span{color:blue}
+        input[type = radio]:checked + span{color: red}
+        input[type = radio]:disabled + span{color:gray; text-decoration: line-through;}
+        table > tbody > tr:nth-child(odd){background-color: beige}
+
+    </style>
+</head>
+<body>
+    <h2> 레스토랑 예약</h2>
+    <p>예약시간 15분 이내 방문하지 않으면 자동 취소됩니다. </p>
+
+    <form action="" method="GET">    
+    <table border="1">
+        <tr>
+            <th>예약날짜</th>
+            <td>
+                <input type="date" name="datename">
+            </td>
+        </tr>
+        <tr>
+            <th>예약시간</th>
+            <td>
+                <input type="time" name="timename">
+            </td>
+        </tr>
+        <tr>
+            <th>인원선택</th>
+            <td>                
+                <input type="radio" value="two" name="party" checked><span>2명 이하</span><br>
+                <input type="radio" value="three" name="party" ><span>3명</span><br>
+                <input type="radio" value="three" name="party" ><span>4명</span><br>
+                <input type="radio" value="three" name="party" disabled><span>5명 이상</span><br>
+            </td>
+        </tr>
+        <tr>
+            <th>예약자 이름</th>
+            <td>
+                <input type="text" name="firstname">
+            </td>
+        </tr>
+        <tr>
+            <th>예약자 연락처</th>
+            <td>
+                <input type="text"  name="phone" placeholder="010-">
+            </td>
+        </tr>
+        <tr>
+            <th>예약 비밀번호</th>
+            <td>
+                <input type="password" name="pwd">
+            </td>
+        </tr>
+        <tr>
+            <th colspan="2">
+                <a href="#" target="_blank">예약하기</a><br>
+            </th>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
